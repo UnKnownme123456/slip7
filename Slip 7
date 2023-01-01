@@ -1,0 +1,34 @@
+//PHP
+Q1)
+<html>
+<head>
+ <title>Navigation Bar</title>
+<style>
+li {
+ display:inline;
+}
+</style>
+</head>
+<body style="font-size:40px">
+<ul>
+ <li><a href="HOME.asp" style="color:white; backgroundcolor:grey;">HOME</a></li>
+ <li> <a href="JAVA.asp" style="color:blue; backgroundcolor:#D3D3D3;">Java</a></li>
+ <li ><a href="HTML.asp" style="color:blue; backgroundcolor:#D3D3D3;">HTML</a></li>
+ <li><a href="CSS.asp" style="color:blue; backgroundcolor:#D3D3D3;">CSS</a></li>
+</ul>
+</body>
+</html>
+
+
+
+
+//DS
+Q2) 
+import pandas as p
+from sklearn import preprocessing
+ d = pd.read_csv('D:\\yogita\\Data.csv')
+label_encoder = preprocessing.LabelEncoder()
+ d['purchased']= label_encoder.fit_transform(d['purchased'])
+one_hot_encoded_data = p.get_dummies(d, columns = ['country'])
+print(one_hot_encoded_data)
+
